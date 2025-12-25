@@ -5,26 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
+    tools:context=".MainActivity2">
 
     <ImageView
-        android:layout_width="327dp"
-        android:layout_height="232dp"
-        android:src="@drawable/photo_one"
+        android:layout_width="348dp"
+        android:layout_height="233dp"
+        android:src="@drawable/photo_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="164dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="27dp"
         android:id="@+id/photoOne"/>
 
 
     <TextView
         android:layout_width="224dp"
         android:layout_height="72dp"
-        android:text="Get Paid! Playing Video Game"
+        android:text="Schedule Games With Friends "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/photoOne"
@@ -40,7 +38,7 @@
     <TextView
         android:layout_width="224dp"
         android:layout_height="63dp"
-        android:text="Earn points and real cash when you win a battle with no delay in cashing out"
+        android:text="Easily create an upcoming event and get ready for battle. Yeah! real combat fella."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textOne"
@@ -76,6 +74,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textSkip"
         android:layout_marginTop="71dp"
-        android:id="@+id/dots" />
+        android:id="@+id/dots" /> />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
