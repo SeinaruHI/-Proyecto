@@ -5,30 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity3">
 
 
 
     <ImageView
-        android:layout_width="327dp"
-        android:layout_height="232dp"
-        android:src="@drawable/photo_one"
+        android:layout_width="316dp"
+        android:layout_height="294dp"
+        android:src="@drawable/photo_three"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="164dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginStart="27dp"
         android:id="@+id/photoOne"/>
 
 
     <TextView
         android:layout_width="224dp"
         android:layout_height="72dp"
-        android:text="Get Paid! Playing Video Game"
+        android:text="Text, Audio and Video Chat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/photoOne"
-        android:layout_marginTop="35dp"
         android:layout_marginStart="76dp"
         android:layout_marginEnd="75dp"
         android:gravity="center"
@@ -40,7 +39,7 @@
     <TextView
         android:layout_width="224dp"
         android:layout_height="63dp"
-        android:text="Earn points and real cash when you win a battle with no delay in cashing out"
+        android:text="Intuitive real life experience on mobile. Chat with fellow gamers before and after combat for free!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textOne"
@@ -52,21 +51,17 @@
         android:textColor="#000"
         android:id="@+id/textTwo"/>
 
-    <TextView
-        android:layout_width="224dp"
-        android:layout_height="21dp"
-        android:text="Skip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="58dp"
         app:layout_constraintTop_toBottomOf="@id/textTwo"
-        android:layout_marginTop="63dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginEnd="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#F4436E"
+        android:layout_marginTop="38dp"
+        android:text="Let’s Combat!"
         android:gravity="center"
-        android:textSize="14dp"
-        android:textColor="#F6446F"
-        android:textStyle="bold"
-        android:id="@+id/textSkip"/>
+        android:id="@+id/button"/>
 
     <ImageView
         android:layout_width="50dp"
@@ -74,8 +69,8 @@
         android:src="@drawable/slider_dots"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textSkip"
-        android:layout_marginTop="71dp"
-        android:id="@+id/dots" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginTop="38dp"
+        android:id="@+id/dots" /> />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
