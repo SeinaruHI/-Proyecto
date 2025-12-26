@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:background="@color/white">
 
     <ImageView
         android:layout_width="348dp"
@@ -33,7 +34,7 @@
         android:textSize="24dp"
         android:textColor="#F6446F"
         android:textStyle="bold"
-        android:id="@+id/textOne"/>
+        android:id="@+id/textOne" />
 
     <TextView
         android:layout_width="224dp"

@@ -13,7 +13,6 @@ class MainActivity3 : AppCompatActivity() {
     private lateinit var binding: ActivityMain3Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding= ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.button.setOnClickListener {
