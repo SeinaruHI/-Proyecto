@@ -1,5 +1,6 @@
 package com.example.genialidad
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -16,7 +17,7 @@ class MainActivity3 : AppCompatActivity() {
         binding= ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.button.setOnClickListener {
-            Toast.makeText(this, "¡la misión está lista!!!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, LIstActivity::class.java))
         }
     }
 }

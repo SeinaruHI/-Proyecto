@@ -25,6 +25,7 @@ class SignInActivity : AppCompatActivity() {
             val userPassword=binding.passwordEditText.text.toString()
             if (correctLogins.contains(userLogin)&&correctPassword==userPassword){
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
             else {
                 Toast.makeText(this, "Datos incorrectos", Toast.LENGTH_SHORT).show()
