@@ -1,5 +1,6 @@
 package com.example.genialidad
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -17,8 +18,10 @@ class LIstActivity : AppCompatActivity() {
         binding= ActivityListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.mainRV.layoutManager= LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        binding.mainRV.adapter= MainRVAdapter(listOf("GGGGG","SSSSS","AAAAA","DDDDD","LLLLL"),{dataText ->
+        val dataList= listOf(ExampleData(name = "Даниил", surname = "Даниилов", age = 32), ExampleData(name = "Александр", surname = "Александрович", age = 20))
+        binding.mainRV.adapter= MainRVAdapter(dataList,{dataText ->
             Toast.makeText(this, dataText, Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, FragmentActivity::class.java))
         })
 
     }

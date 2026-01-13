@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Genialidad">
         <activity
+            android:name=".FragmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".LIstActivity"
             android:exported="false" />
         <activity

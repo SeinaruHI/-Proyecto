@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.genialidad.databinding.ItemViewMainBinding
 import org.w3c.dom.Text
 
-class MainRVAdapter(private val listData:List<String>, private val onClick:(String)-> Unit) : RecyclerView.Adapter<MainRVAdapter.ViewHolder>() {
+class MainRVAdapter(private val listData:List<ExampleData>, private val onClick:(String)-> Unit) : RecyclerView.Adapter<MainRVAdapter.ViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -28,9 +28,10 @@ class MainRVAdapter(private val listData:List<String>, private val onClick:(Stri
 
     class ViewHolder(private val binding: ItemViewMainBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(dataText: String, onClick: (String) -> Unit){
-            binding.mainItemViewText.text=dataText
-            binding.mainItemViewText.setOnClickListener { onClick(dataText) }
+        fun bind(dataText: ExampleData, onClick: (String) -> Unit){
+            val exampleText="${dataText.name} ${dataText.surname} ${dataText.age}"
+            binding.mainItemViewText.text=exampleText
+            binding.mainItemViewText.setOnClickListener { onClick(exampleText) }
 
         }
 
