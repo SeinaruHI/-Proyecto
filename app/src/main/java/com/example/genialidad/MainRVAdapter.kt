@@ -31,7 +31,7 @@ class MainRVAdapter(private val listData:List<ExampleData>, private val onClick:
         fun bind(dataText: ExampleData, onClick: (String) -> Unit){
             val exampleText="${dataText.name} ${dataText.surname} ${dataText.age}"
             binding.mainItemViewText.text=exampleText
-            binding.mainItemViewText.setOnClickListener { onClick(exampleText) }
+            binding.mainItemViewText.setOnClickListener { onClick(exampleText  ) }
 
         }
 

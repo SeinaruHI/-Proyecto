@@ -50,4 +50,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.google.code.gson:gson:2.8.5")
+    implementation("com.squareup.retrofit2:converter-simplexml:2.1.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava2:2.6.1")
+    implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
+    implementation("io.reactivex.rxjava2:rxjava:2.2.11")
+    implementation("com.squareup.retrofit2:converter-gson:2.6.1")
 }
